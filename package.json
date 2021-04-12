@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "clean": "npx del dist",
+    "prebuild": "npm run clean",
     "build": "npx eleventy",
     "start": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "predeploy": "npm run build",
+    "deploy": "npx firebase deploy"
   },
   "keywords": [],
   "author": "",
