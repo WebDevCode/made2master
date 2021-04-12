@@ -1,0 +1,17 @@
+---
+title: Home
+date: 2020-04-12
+---
+
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <ul>
+{%- for post in collections.post -%}
+  <li>{{ post.data.title }}</li>
+{%- endfor -%}
+</ul>
+  </body>
+</html>

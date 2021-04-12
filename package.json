@@ -1,0 +1,20 @@
+{
+  "name": "made2master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx del dist",
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "del-cli": "^3.0.1",
+    "firebase-tools": "^9.9.0"
+  }
+}
